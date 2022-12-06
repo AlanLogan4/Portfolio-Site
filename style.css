@@ -2,8 +2,50 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    border: 3px solid;
+    box-sizing: border-box;
     
 }
+
+/* #region animation + general stuff*/
+
+    #closeX{
+        display: flex;
+        justify-content: right;
+        align-items: flex-start;
+        font-size: 150%;
+    
+    }
+
+   
+
+    @keyframes example{
+        from{top: 500px;opacity: 0;}
+        to{top: 0px; background-color: white;}
+    }
+
+    .content{
+        width: 50%;
+        margin: auto;
+        position: relative;
+        animation-name: example;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        background-color: white;
+        border: 2px solid;
+    
+    }
+
+    article{
+        margin-top: 10px;
+        border: 2px solid;
+    }
+
+    section{
+        margin-top: 20px;
+    }
+
+/*#endregion*/
 
 /* #region homepage */
     .flex-container{
@@ -14,7 +56,7 @@
         justify-content: space-around;
         align-items: center;
         height: 350px;
-        width: 40%;
+        width: 70%; 
     }
 
     .flex-header{
@@ -44,3 +86,9 @@
     }
 
 /* #endregion */
+
+
+/* #region Talent 1*/
+
+
+/*#endregion*/
