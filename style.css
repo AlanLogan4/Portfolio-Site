@@ -79,12 +79,14 @@ body{
     #logo{
         display: flex;
         justify-content: center;
+        
     }
 
     #logo img{
         height: auto;
         width: 400px;
         max-width: 400px;
+        margin: auto;
         min-width: 200px;
     }
 
@@ -120,7 +122,10 @@ body{
         background-color: rgb(71, 71, 71);
         transition: 1s;
         box-shadow: 10px 10px 3px black;
-        border: 2px solid rgb(71, 71, 71);
+        border: 2px solid rgb(151, 151, 151);
+        max-width: 2000px;
+        margin-right: 10px;
+        
     }
 
     .flex-img{
@@ -146,6 +151,10 @@ body{
         justify-content: center;
     }
 
+
+    .mainheader{
+        background-color: rgba(128, 128, 128, 0.541);
+    }
 /* #endregion */
 
 
@@ -181,3 +190,40 @@ footer{
     margin-top: 500px;
     
 }
+
+
+/* #region phone screen*/
+
+    @media screen and (max-width: 900px){
+        .flex-container{
+            margin-top: 100px;
+            flex-direction: column;
+            
+        }
+        .flex-header{
+            justify-content: center;
+        }
+
+        .flex-item{
+            margin-top: 10px;
+            
+            width: 300px;
+            
+        }
+
+        h1{
+            font-size: 50px;
+        }
+
+        .content2{
+            width: fit-content;
+        }
+
+        .flex-container a{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+/*#endregion*/
